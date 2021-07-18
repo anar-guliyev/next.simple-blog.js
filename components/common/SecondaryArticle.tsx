@@ -154,12 +154,12 @@ export const SecondaryArticle = ({
       showCancelButton: true,
       confirmButtonText: `Yes`,
       denyButtonText: `No`,
-    }).then((result) => {
+    }).then(async (result) => {
       if (result.isConfirmed) {
-        const response = axios.delete(
+        const response: any = await axios.delete(
           `https://simple-blog-api.crew.red/posts/${id}`
         );
-        if (response) {
+        if (response || response.status == 200) {
           Swal.fire("Deleted!", "", "success");
           setTimeout(reload, 500);
         }

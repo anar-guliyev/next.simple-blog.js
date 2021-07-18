@@ -3,7 +3,7 @@ import Head from "next/head";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
-import { MainArticle, Section, SecondaryArticle, Loading } from "@components";
+import { Section, SecondaryArticle, Loading } from "@components";
 
 interface article {
   title: string;
