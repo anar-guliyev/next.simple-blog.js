@@ -27,7 +27,6 @@ const SecondaryArticleContainer = styled.article`
     margin-bottom: 1rem;
   }
   .info {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -58,6 +57,7 @@ const SecondaryArticleContainer = styled.article`
     .short-description {
       color: #738a94;
       font-size: 1.125rem;
+      max-width: 200px;
     }
     .user {
       display: flex;
@@ -65,6 +65,7 @@ const SecondaryArticleContainer = styled.article`
       flex-wrap: wrap;
       justify-content: start;
       margin-top: 1rem;
+      max-width: 70%;
       img {
         width: 35px;
         height: 35px;
